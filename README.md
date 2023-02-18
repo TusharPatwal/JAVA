@@ -66,13 +66,48 @@ System.out.println("Hello World");
 ```
 
 ##### Multi-line Comments
-Multi-line comments start with /* and ends with */.
-
-Any text between /* and */ will be ignored by Java.
-
+- Multi-line comments start with /* and ends with */.
 ```
 /* The code 
 below will print the 
 words Hello World */
 System.out.println("Hello World");
+```
+### Variables
+
+| Data Type | <Center>Definition</center> | Default size |
+|-----------|------------|--------------|
+|boolean | It is used to store only two possible values: true and false. |	1 bit|
+|char		| It is used to store characters. |2 byte|
+|byte		| It is an 8-bit signed two's complement integer.| 1 byte|
+|short	| It is a 16-bit signed two's complement integer. |	2 byte|
+|int		| It is a 32-bit signed two's complement integer. |	4 byte|
+|long		| It is a 64-bit two's complement integer. |	8 byte|
+|float	| It is a single-precision 32-bit IEEE 754 floating point. |	4 byte|
+|double | It  is a double-precision 64-bit IEEE 754 floating point. |	8 byte|
+
+```
+// Boolean Data Type
+Boolean one = false; 
+
+// Char Data Type
+char letterA = 'A';
+
+// Byte Data Type 
+byte a = 10, b = -20;
+
+// Short Data Type
+short s = 10000, r = -5000;
+
+// Int Data Type
+int a = 100000, b = -200000;
+
+// Long Data Type
+long a = 100000L, b = -200000L;
+
+// Float Data Type
+float f1 = 234.5f;
+
+// Double Data Type
+double d1 = 12.3; 
 ```
