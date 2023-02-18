@@ -16,7 +16,7 @@ First appeared in May 23, 1995
 In Java, every application begins with a class name, and that class must match the filename.
 Let's create our first Java file, called Main.java.
 
-```
+```java
 // First Java program
 public class Main {
   public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class Main {
 ```
 - Every line of code that runs in Java must be inside a <b>class</b>.
 - The <b>main()</b> method is required and you will see it in every Java program:
-```
+```java
 public static void main(String[] args)
 ```
 - Any code inside the <b>main()</b> method will be executed.
@@ -36,7 +36,7 @@ public static void main(String[] args)
 ### Output
 ##### System.out.println()
 - Inside the main() method, we can use the println() method to print a line of text to the screen
-```
+```java
 // for strings
 System.out.println("Hello World!");
 
@@ -47,7 +47,7 @@ System.out.println(500);
 
 ##### System.out.print()
 - There is also a print() method, which is similar to println(). The only difference is that it does not insert a new line at the end of the output.
-```
+```java
 // for strings
 System.out.print("Hello World!");
 
@@ -60,14 +60,14 @@ Comments can be used to explain Java code, and to make it more readable. It can 
 
 ##### Single-line Comments
 - Single-line comments start with two forward slashes (//).
-```
+```java
 // This is a comment
 System.out.println("Hello World");
 ```
 
 ##### Multi-line Comments
 - Multi-line comments start with /* and ends with */.
-```
+```java
 /* The code 
 below will print the 
 words Hello World */
@@ -86,7 +86,7 @@ System.out.println("Hello World");
 |float	| It is a single-precision 32-bit IEEE 754 floating point. |	4 byte|
 |double | It  is a double-precision 64-bit IEEE 754 floating point. |	8 byte|
 
-```
+```java
 // Boolean Data Type
 Boolean one = false; 
 
@@ -97,17 +97,18 @@ char letterA = 'A';
 byte a = 10, b = -20;
 
 // Short Data Type
-short s = 10000, r = -5000;
+short s = 10000;
 
 // Int Data Type
-int a = 100000, b = -200000;
+int a = 100000;
 
 // Long Data Type
-long a = 100000L, b = -200000L;
+long a = 100000L;
 
 // Float Data Type
 float f1 = 234.5f;
 
 // Double Data Type
 double d1 = 12.3; 
+
 ```
