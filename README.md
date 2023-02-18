@@ -73,7 +73,7 @@ below will print the
 words Hello World */
 System.out.println("Hello World");
 ```
-### Variables
+### Data Types
 
 | Data Type | <Center>Definition</center> | Default size |
 |-----------|------------|--------------|
