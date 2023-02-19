@@ -30,11 +30,12 @@ class day01 {
     System.out.println(name);
     // System.out.println(a+b);
 
-    Scanner scan = new Scanner(System.in);
-    int a = scan.nextInt();
-    int b = scan.nextInt();
+    int a = sc.nextInt();
+    int b = sc.nextInt();
     int sum = a+b;
     System.out.println(sum);
+
+    sc.close();
   }
 
 }
