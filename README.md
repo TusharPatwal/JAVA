@@ -100,7 +100,7 @@ below will print the
 words Hello World */
 System.out.println("Hello World");
 ```
-### Data Types
+## Data Types
 
 #### Primitive Data Types
 | Data Type | <Center>Definition</center> | Default size |
@@ -151,7 +151,7 @@ final int num = 5;
 num = 20; // Will gererate an error: cannot assign a value to final variable num
 ```
 
-#### Java Operator Precedence
+## Java Operator Precedence
 |Operator Type |	Category |	Precedence |
 |--------------|-----------|-------------|
 |Unary |	postfix | expr++ expr-- |
@@ -169,7 +169,7 @@ num = 20; // Will gererate an error: cannot assign a value to final variable num
 | Ternary	| ternary	|? :|
 | Assignment |	assignment	| = += -= *= /= %= &= ^= |= <<= >>= >>>=|
 
-#### Type casting
+## Type casting
 - Convert a value from one data type to another data type is known as type casting.
 
 ##### Types of Type Casting
@@ -218,7 +218,7 @@ public static void main(String args[]){
 }} 
 ```
 
-#### Input 
+## Input 
 
 ###### Java Scanner Class
 - Java Scanner class allows the user to take input from the console. It belongs to java.util package.
@@ -281,10 +281,10 @@ public class ScannerClose{
 }}     
 ```
 
-### Java Control Statements
-#### 1. Decision Making statements
-##### 1) If Statement:
-###### 1. Simple if statement
+## Java Control Statements
+### 1. Decision Making statements
+#### 1) If Statement:
+##### 1. Simple if statement
 - It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.
 
 Synatx
@@ -304,7 +304,7 @@ if(x+y > 20) {
 }}}    
 ```
 
-###### 2. if-else statement
+##### 2. if-else statement
 -   If the given condition is true, then the code inside the if block is executed, otherwise else block code is executed.
 
 Synatx
@@ -327,7 +327,7 @@ if(x+y < 10) {
     System.out.println("x + y is greater than 20");  
 }}}     
 ```
-###### 3. if-else-if ladder
+##### 3. if-else-if ladder
 -  As soon as a true condition is found, the statement associated with it is executed, and the rest of the ladder is bypassed.
 
 Synatx
@@ -353,8 +353,9 @@ if(city == "Meerut") {
     System.out.println(city);  
 }}}     
 ```
-###### 4. Nested if-statement
--
+##### 4. Nested if-statement
+- It means one IF function inside of another, allows you to test multiple criteria and increases the number of possible outcomes.
+
 Synatx
 ```java
 if(condition 1) {    
@@ -382,7 +383,7 @@ if(address.endsWith("India")) {
 }}}      
 ```
 
-##### 2) Switch Statement:
+#### 2) Switch Statement:
 - It contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched.
 
 Syntax
