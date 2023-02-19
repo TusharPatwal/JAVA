@@ -228,3 +228,21 @@ String str= sc.nextLine();  //reads string
 System.out.print("You have entered: "+str); 
 }}  
 ```
+###### Java Scanner close() Method
+- The close() is a method of Java Scanner class which is used to closes this scanner.
+
+```java
+import java.util.*;    
+public class ScannerClose{    
+   public static void main(String args[]){   
+     System.out.print("Enter Your Name: ");  
+     
+       //Create a scanner with the specified Object  
+       Scanner scanner = new Scanner(System.in);      
+       String name = scanner.next();  
+       System.out.println("Name: "+name);   
+
+       //Close the scanner  
+       scanner.close();  
+}}     
+```
