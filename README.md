@@ -1,5 +1,20 @@
 # JAVA
 
+### Index
+|Index no.|Topic Name|Link|
+|---------|----------|----|
+|1.| Java syntax |[Click here](##-Java-syntax)|
+|2.| Data Types |[Click here](###-Data-Types)|
+|3.|||
+|4.|||
+|5.|||
+|6.|||
+|7.|||
+|8.|||
+|9.|||
+|10.|||
+|11.|||
+|12.|||
 ### What is Java?
 Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. It is owned by Oracle, and more than 3 billion devices run Java.<br>
 Designed by	James Gosling <br>
