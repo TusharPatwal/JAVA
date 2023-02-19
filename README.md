@@ -3,18 +3,19 @@
 ### Index
 |Index no.|Topic Name|Link|
 |---------|----------|----|
-|1.| Java syntax |[Click here](##-Java-syntax)|
-|2.| Data Types |[Click here](###-Data-Types)|
-|3.|||
-|4.|||
-|5.|||
-|6.|||
+|1.| Java syntax |[Click here](#java-syntax)|
+|2.| Data Types |[Click here](#data-types)|
+|3.| Java Operators |[Click here](#java-operator-precedence)|
+|4.| Type Casting |[Click here](#type-casting)|
+|5.| Input |[Click here](#input)|
+|6.| Java Control Statements |[Click here](#java-control-statements)| 
 |7.|||
 |8.|||
 |9.|||
 |10.|||
 |11.|||
 |12.|||
+|13.|||
 ### What is Java?
 Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. It is owned by Oracle, and more than 3 billion devices run Java.<br>
 Designed by	James Gosling <br>
