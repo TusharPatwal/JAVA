@@ -135,6 +135,24 @@ final int num = 5;
 num = 20; // Will gererate an error: cannot assign a value to final variable num
 ```
 
+#### Java Operator Precedence
+|Operator Type |	Category |	Precedence |
+|--------------|-----------|-------------|
+|Unary |	postfix | expr++ expr-- |
+|      |prefix	  |++expr --expr +expr -expr ~ !|
+|Arithmetic |	multiplicative |	* / % |
+|           |additive |	+ - | 
+|Shift |	shift |	<< >> >>> |
+|Relational	|comparison	|< > <= >= instanceof|
+||equality|	== !=|
+|Bitwise	|bitwise AND|	&|
+||bitwise exclusive OR|	^|
+||bitwise inclusive OR| l |
+|Logical|	logical AND	|&&|
+||logical OR |      l       |
+| Ternary	| ternary	|? :|
+| Assignment |	assignment	| = += -= *= /= %= &= ^= |= <<= >>= >>>=|
+
 #### Type casting
 - Convert a value from one data type to another data type is known as type casting.
 
@@ -245,4 +263,138 @@ public class ScannerClose{
        //Close the scanner  
        scanner.close();  
 }}     
+```
+
+### Java Control Statements
+#### 1. Decision Making statements
+##### 1) If Statement:
+###### 1. Simple if statement
+- It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.
+
+Synatx
+```java
+if(condition) {    
+statement 1; //executes when condition is true   
+}    
+```
+Example:
+```java
+public class Student {    
+public static void main(String[] args) {    
+int x = 10;    
+int y = 12;    
+if(x+y > 20) {    
+    System.out.println("x + y is greater than 20");    
+}}}    
+```
+
+###### 2. if-else statement
+-   If the given condition is true, then the code inside the if block is executed, otherwise else block code is executed.
+
+Synatx
+```java
+if(condition) {    
+statement 1; //executes when condition is true   
+} else{  
+statement 2; //executes when condition is false   
+}    
+```
+Example:
+```java
+public class Student {  
+public static void main(String[] args) {  
+int x = 10;  
+int y = 12;  
+if(x+y < 10) {  
+    System.out.println("x + y is less than 10");  
+} else {  
+    System.out.println("x + y is greater than 20");  
+}}}     
+```
+###### 3. if-else-if ladder
+-  As soon as a true condition is found, the statement associated with it is executed, and the rest of the ladder is bypassed.
+
+Synatx
+```java
+if(condition 1) {    
+statement 1; //executes when condition 1 is true   
+} else if(condition 2) {  
+statement 2; //executes when condition 2 is true   
+} else {  
+statement 2; //executes when all the conditions are false   
+}    
+```
+Example:
+```java
+public class Student {  
+public static void main(String[] args) {  
+String city = "Delhi";  
+if(city == "Meerut") {  
+    System.out.println("city is meerut");  
+}else if (city == "Noida") {  
+    System.out.println("city is noida");  
+}else {  
+    System.out.println(city);  
+}}}     
+```
+###### 4. Nested if-statement
+-
+Synatx
+```java
+if(condition 1) {    
+statement 1; //executes when condition 1 is true   
+  if(condition 2) {  
+      statement 2; //executes when condition 2 is true   
+  } else{  
+      statement 2; //executes when condition 2 is false   
+}}    
+```
+Example:
+```java
+public class Student {    
+public static void main(String[] args) {    
+String address = "Delhi, India";    
+    
+if(address.endsWith("India")) {    
+  if(address.contains("Meerut")) {    
+    System.out.println("Your city is Meerut");    
+  }else {    
+    System.out.println(address.split(",")[0]);    
+  }    
+}else {    
+  System.out.println("You are not living in India");    
+}}}      
+```
+
+##### 2) Switch Statement:
+- It contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched.
+
+Syntax
+```java
+switch (expression){  
+    case value1:  statement1;  
+     break;  
+    .  
+    .  
+    case valueN:  statementN;  
+     break;  
+    default:  default statement;  
+}  
+```
+Example:
+```java
+public class Student implements Cloneable {  
+public static void main(String[] args) {  
+int num = 2;  
+switch (num){  
+case 0:  System.out.println("number is 0");  
+  break;  
+case 1: System.out.println("number is 1");  
+  break;
+case 2: System.out.println("number is 2");  
+  break;  
+case 3: System.out.println("number is 3");  
+  break;
+default: System.out.println(num);  
+}}}  
 ```
