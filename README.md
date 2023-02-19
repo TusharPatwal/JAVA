@@ -16,6 +16,7 @@ First appeared in May 23, 1995
 In Java, every application begins with a class name, and that class must match the filename.
 Let's create our first Java file, called Main.java.
 
+Example:
 ```java
 // First Java program
 public class Main {
@@ -25,7 +26,9 @@ public class Main {
 }
 ```
 - Every line of code that runs in Java must be inside a <b>class</b>.
-- The <b>main()</b> method is required and you will see it in every Java program:
+- The <b>main()</b> method is required and you will see it in every Java program.
+
+Example:
 ```java
 public static void main(String[] args)
 ```
@@ -35,7 +38,9 @@ public static void main(String[] args)
 
 ### Output
 ##### System.out.println()
-- Inside the main() method, we can use the println() method to print a line of text to the screen
+- Inside the main() method, we can use the println() method to print a line of text to the screen.
+
+Example:
 ```java
 // for strings
 System.out.println("Hello World!");
@@ -47,6 +52,8 @@ System.out.println(500);
 
 ##### System.out.print()
 - There is also a print() method, which is similar to println(). The only difference is that it does not insert a new line at the end of the output.
+
+Example:
 ```java
 // for strings
 System.out.print("Hello World!");
@@ -60,6 +67,8 @@ Comments can be used to explain Java code, and to make it more readable. It can 
 
 ##### Single-line Comments
 - Single-line comments start with two forward slashes (//).
+
+Example:
 ```java
 // This is a comment
 System.out.println("Hello World");
@@ -67,6 +76,8 @@ System.out.println("Hello World");
 
 ##### Multi-line Comments
 - Multi-line comments start with /* and ends with */.
+
+Example:
 ```java
 /* The code 
 below will print the 
@@ -75,6 +86,7 @@ System.out.println("Hello World");
 ```
 ### Data Types
 
+#### Primitive Data Types
 | Data Type | <Center>Definition</center> | Default size |
 |-----------|------------|--------------|
 |boolean | It is used to store only two possible values: true and false. |	1 bit|
@@ -86,6 +98,7 @@ System.out.println("Hello World");
 |float	| It is a single-precision 32-bit IEEE 754 floating point. |	4 byte|
 |double | It  is a double-precision 64-bit IEEE 754 floating point. |	8 byte|
 
+Example:
 ```java
 // Boolean Data Type
 Boolean one = false; 
@@ -111,4 +124,62 @@ float f1 = 234.5f;
 // Double Data Type
 double d1 = 12.3; 
 
+```
+
+##### Final Variable
+- If you make any variable as final, you cannot change the value of final variable(It will be constant).
+
+Example:
+```java
+final int num = 5;
+num = 20; // Will gererate an error: cannot assign a value to final variable num
+```
+
+#### Type casting
+- Convert a value from one data type to another data type is known as type casting.
+
+##### Types of Type Casting
+
+###### 1. Widening Type Casting
+- Converting a lower data type into a higher one is called widening type casting.
+- Both data types must be compatible with each other.
+- The target type must be larger than the source type.
+
+```java
+byte -> short -> char -> int -> long -> float -> double  
+```
+Example:
+```java
+public class WideningTypeCasting{  
+public static void main(String[] args){ 
+ 
+  int x = 7;  
+//automatically converts the integer type into long type  
+  
+  long y = x;  
+//automatically converts the long type into float type  
+
+  float z = y;  
+}}
+```
+
+###### 2. Narrowing Type Casting
+- Converting a higher data type into a lower one is called narrowing type casting.
+
+```java
+double -> float -> long -> int -> char -> short -> byte  
+```
+Example:
+```java
+public class NarrowingTypeCastingExample{  
+public static void main(String args[]){  
+
+  double d = 166.66;  
+//converting double data type into long data type  
+
+  long l = (long)d;   
+//converting long data type into int data type  
+
+  int i = (int)l;  
+}} 
 ```
