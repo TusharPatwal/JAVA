@@ -36,7 +36,7 @@ public static void main(String[] args)
 
 <hr>
 
-### Output
+#### Output
 ##### System.out.println()
 - Inside the main() method, we can use the println() method to print a line of text to the screen.
 
@@ -182,4 +182,49 @@ public static void main(String args[]){
 
   int i = (int)l;  
 }} 
+```
+
+#### Input 
+
+###### Java Scanner Class
+- Java Scanner class allows the user to take input from the console. It belongs to java.util package.
+
+```java 
+import java.util.*;
+```
+```java
+// Syntax
+Scanner sc=new Scanner(System.in);  
+```
+###### Methods of Java Scanner Class
+| Method |	Description |
+|--------|--------------| 
+|int nextInt() |	It is used to scan the next token of the input as an integer.|
+|float nextFloat()	| It is used to scan the next token of the input as a float. |
+|double nextDouble() |	It is used to scan the next token of the input as a double.|
+|byte nextByte() |	It is used to scan the next token of the input as a byte.|
+|String nextLine() |	Advances this scanner past the current line.|
+|boolean nextBoolean() |	It is used to scan the next token of the input into a boolean value.|
+|long nextLong() |	It is used to scan the next token of the input as a long.|
+|short nextShort() |	It is used to scan the next token of the input as a Short.|
+
+
+Example:
+```java
+import java.util.*;  
+class UserInput{  
+public static void main(String[] args){  
+Scanner sc= new Scanner(System.in); 
+
+System.out.print("Enter first number- ");  
+int a= sc.nextInt();  // read int
+System.out.print("Enter second number- ");  
+int b= sc.nextInt();  // read int
+int d=a+b;  
+System.out.println("Total= " +d);  
+
+System.out.print("Enter a string: ");  
+String str= sc.nextLine();  //reads string  
+System.out.print("You have entered: "+str); 
+}}  
 ```
