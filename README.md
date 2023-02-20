@@ -440,7 +440,7 @@ System.out.println(sum);
 ```
 
 #### 2) While loop 
-- If the condition is true, then the loop body will be executed; otherwise, the statements after the loop will be executed.
+- It is also known as the entry-controlled loop since the condition is checked at the start of the loop. If the condition is true, then the loop body will be executed; otherwise, the statements after the loop will be executed.
 
 Syntax
 ```java
