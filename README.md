@@ -165,7 +165,7 @@ num = 20; // Will gererate an error: cannot assign a value to final variable num
 ||bitwise exclusive OR|	^|
 ||bitwise inclusive OR| l |
 |Logical|	logical AND	|&&|
-||logical OR |      l       |
+||logical OR |      l l     |
 | Ternary	| ternary	|? :|
 | Assignment |	assignment	| = += -= *= /= %= &= ^= |= <<= >>= >>>=|
 
