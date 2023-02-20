@@ -6,9 +6,9 @@
 |1.| Java syntax |[Click here](#java-syntax)|
 |2.| Data Types |[Click here](#data-types)|
 |3.| Java Operators |[Click here](#java-operator-precedence)|
-|4.| Type Casting |[Click here](#type-casting)|
-|5.| Input |[Click here](#input)|
-|6.| Java Control Statements |[Click here](#java-control-statements)| 
+|4.| Type Casting & Input |[Click here](#type-casting)|
+|5.| Java Control Statements |[Click here](#java-control-statements)|
+|6.|  || 
 |7.|||
 |8.|||
 |9.|||
@@ -413,5 +413,109 @@ case 2: System.out.println("number is 2");
 case 3: System.out.println("number is 3");  
   break;
 default: System.out.println(num);  
+}}}  
+```
+
+### 2. Loop statements
+#### 1) For loop
+- It  is used to check for certain conditions and then repeatedly execute a block of code as long as those conditions are met.
+
+Syntax
+```java
+for(initialization, condition, increment/decrement) {    
+//block of statements    
+}    
+```
+
+Example:
+```java
+public class Cal {  
+public static void main(String[] args) {  
+
+int sum = 0;  
+for(int j = 1; j<=10; j++) {  
+    sum = sum + j;}  
+System.out.println(sum);  
+}}  
+```
+
+#### 2) While loop 
+- If the condition is true, then the loop body will be executed; otherwise, the statements after the loop will be executed.
+
+Syntax
+```java
+while(condition){    
+//looping statements    
+} 
+```
+Example:
+```java
+public class Cal {    
+public static void main(String[] args) {
+    
+int i = 0;     
+while(i<=10) {    
+  System.out.println(i);    
+  i = i + 2;
+}}}  
+```
+
+#### 3) Do-while loop
+- It is also known as the exit-controlled loop since the condition is not checked in advance. 
+
+Syntax
+```java
+do {    
+//statements    
+} while (condition); 
+```
+Example:
+```java
+public class Cal {    
+public static void main(String[] args) {    
+int i = 0;    
+do {    
+  System.out.println(i);    
+  i = i + 2;    
+}while(i<=10);    
+}}    
+```
+
+### 3. Jump Statements
+#### 1) Break 
+- It is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement.
+
+Syntax
+```java
+break;
+```
+Example:
+```java
+public class Break {    
+public static void main(String[] args) {  
+
+for(int i = 0; i<= 10; i++) {  
+  System.out.println(i);  
+    if(i==6) {  
+      break;  
+}}}}  
+```
+
+#### 2) Continue
+- It skips the specific part of the loop and jumps to the next iteration of the loop immediately.
+
+Syntax
+```java
+continue;
+```
+Example:
+```java
+public class ContinueExample {  
+public static void main(String[] args) {  
+      
+  for(int i=1;i<=10;i++){  
+        if(i==5){  
+          continue; 
+        } System.out.println(i);  
 }}}  
 ```
