@@ -8,7 +8,7 @@
 |3.| Java Operators |[Click here](#java-operator-precedence)|
 |4.| Type Casting & Input |[Click here](#type-casting)|
 |5.| Java Control Statements |[Click here](#java-control-statements)|
-|6.|  || 
+|6.| OOPs |[Chick here](#oops)| 
 |7.|||
 |8.|||
 |9.|||
@@ -519,3 +519,28 @@ public static void main(String[] args) {
         } System.out.println(i);  
 }}}  
 ```
+
+
+## OOPs
+- Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects.
+
+### Characteristics of Object Oriented Programming
+
+#### Object
+- An Object can be defined as an instance of a class. An object contains an address and takes up some space in memory.
+
+#### Class
+- Collection of objects is called class. It is a logical entity.
+A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
+
+#### Inheritance
+- When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+
+#### Polymorphism 
+- If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.
+
+#### Abstraction
+- Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
+
+#### Encapsulation
+- Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines. 
