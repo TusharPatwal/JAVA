@@ -42,6 +42,17 @@ class Student{
         this.age = s01.age;
         this.roll = s01.roll;
     }
+
+    // polymorphism 
+    public void printInfo(String name){
+        System.out.println(name);
+    }
+    public void printInfo(int age){
+        System.out.println(age);
+    }
+    public void printInfo(String name, int age){
+        System.out.println(name + " " + age);
+    }
 }
 
 public class day06 {
@@ -72,5 +83,9 @@ public class day06 {
         Student s01 = new Student(s1);
         s01.display();
         sc.close();
+
+        s01.printInfo("Tushar");
+        s01.printInfo(20);
+        s01.printInfo("Hello", 22);
     }
 }
