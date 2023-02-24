@@ -36,6 +36,12 @@ class Student{
         this.age = age;
         this.roll = roll;
     }
+
+    Student(Student s01){ //copy constructor
+        this.name = s01.name;
+        this.age = s01.age;
+        this.roll = s01.roll;
+    }
 }
 
 public class day06 {
@@ -51,7 +57,7 @@ public class day06 {
         pen1.write();
         pen1.dispay();
         pen2.dispay();
-        sc.close();
+        
 
 
         Student s1 = new Student("Tushar",20, 98);
@@ -62,5 +68,9 @@ public class day06 {
         
         s1.display();
         s2.display();
+
+        Student s01 = new Student(s1);
+        s01.display();
+        sc.close();
     }
 }
