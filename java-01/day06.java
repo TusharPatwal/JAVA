@@ -16,15 +16,25 @@ class Pen{
 }
 
 class Student{
+    String name;
     int age;
     int roll;
 
-    public void setter(int age,int roll){
+    // public void setter(int age, String name,int roll){
+    //     this.name = name;
+    //     this.age = age;
+    //     this.roll = roll;
+    // }
+    public void display(){
+        System.out.println("The name of the student is " +this.name+ " age is " + this.age + " and roll number is " + this.roll);
+    }
+    Student(){ // non-parameterized constructor or default constructor
+        System.out.println("Construtor called");
+    }
+    Student(String name, int age, int roll){ //parameterized constructor
+        this.name = name;
         this.age = age;
         this.roll = roll;
-    }
-    public void display(){
-        System.out.println("The age of Student is " + this.age + " and roll number is " + this.roll);
     }
 }
 
@@ -44,11 +54,11 @@ public class day06 {
         sc.close();
 
 
-        Student s1 = new Student();
-        s1.setter(20, 98);
+        Student s1 = new Student("Tushar",20, 98);
+        // s1.setter(20, "Tushar", 98);
 
-        Student s2 = new Student();
-        s2.setter(22, 99);
+        Student s2 = new Student("Aayush",22, 99);
+        // s2.setter(22,"Aayush", 99);
         
         s1.display();
         s2.display();
