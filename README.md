@@ -521,6 +521,31 @@ public static void main(String[] args) {
 ```
 
 
+### Java Methods
+- It is a collection of instructions that performs a specific task. It provides the reusability of code.
+
+Syntax
+```java
+public class Main {
+  static void myMethod() {
+    // code to be executed
+  }
+}
+```
+Example:
+```java
+public class Main {
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod(); // calling method in main function
+  }
+}
+
+```
+
 ## OOPs
 - Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects.
 
