@@ -8,7 +8,7 @@
 |3.| Java Operators |[Click here](#java-operator-precedence)|
 |4.| Type Casting & Input |[Click here](#type-casting)|
 |5.| Java Control Statements |[Click here](#java-control-statements)|
-|6.| OOPs |[Chick here](#oops)| 
+|6.| OOPs |[Click here](#oops)| 
 |7.|||
 |8.|||
 |9.|||
