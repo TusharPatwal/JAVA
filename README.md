@@ -552,11 +552,8 @@ A class is a group of objects which have common properties. It is a template or 
 
 A class in Java can contain:
 
-<center>
-
 ![Class in Java](https://static.javatpoint.com/images/class-in-java.png)
 
-</center>
 
 Syntax
 ```java
@@ -585,11 +582,8 @@ class Student{
 
 #### Method Declaration
 
-<center>
-
 ![method](https://media.geeksforgeeks.org/wp-content/uploads/methods-in-java.png)
 
-</center>
 
 Syntax
 ```java
