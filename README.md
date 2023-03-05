@@ -569,3 +569,33 @@ A class can also be defined as a blueprint from which you can create an individu
 
 #### Encapsulation
 - Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines. 
+
+
+### Class in Java
+A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity. It can't be physical.
+
+
+A class in Java can contain:
+![Class in Java](https://static.javatpoint.com/images/class-in-java.png)
+
+Syntax
+```java
+class ClassName {
+    // field;  
+    // method;  
+}
+
+```
+Example:
+```java
+class Student{  
+ int id;  
+ String name;    
+ public static void main(String args[]){  
+
+  Student s1 = new Student();
+  
+  System.out.println(s1.id);
+  System.out.println(s1.name);  
+}}  
+```
