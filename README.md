@@ -521,29 +521,6 @@ public static void main(String[] args) {
 ```
 
 
-### Java Methods
-- It is a collection of instructions that performs a specific task. It provides the reusability of code.
-
-Syntax
-```java
-public class Main {
-  static void myMethod() {
-    // code to be executed
-  }
-}
-```
-Example:
-```java
-public class Main {
-  static void myMethod() {
-    System.out.println("I just got executed!");
-  }
-
-  public static void main(String[] args) {
-    myMethod(); // calling method in main function
-  }
-}
-
 ```
 
 ## OOPs
@@ -571,13 +548,17 @@ A class can also be defined as a blueprint from which you can create an individu
 - Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines. 
 
 
-### Class in Java
+#### Class in Java
 A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity. It can't be physical.
 
 
 A class in Java can contain:
 
+<center>
+
 ![Class in Java](https://static.javatpoint.com/images/class-in-java.png)
+
+</center>
 
 Syntax
 ```java
@@ -600,3 +581,35 @@ class Student{
   System.out.println(s1.name);  
 }}  
 ```
+
+#### Method in Java
+- A method is a block of code or collection of statements or a set of code grouped together to perform a certain task or operation. It is used to achieve the reusability of code. We write a method once and use it many times. We do not require to write code again and again.
+
+Method Declaration:
+
+<center>
+
+![method](https://static.javatpoint.com/core/images/method-in-java.png)
+
+</center>
+
+Syntax
+```java
+public class Main {
+  static void myMethod() {
+    // code to be executed
+  }
+}
+```
+Example:
+```java
+public class Main {
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod(); // calling method in main function
+  }
+}
+
