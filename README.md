@@ -521,8 +521,6 @@ public static void main(String[] args) {
 ```
 
 
-```
-
 ## OOPs
 - Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects.
 
@@ -585,11 +583,11 @@ class Student{
 #### Method in Java
 - A method is a block of code or collection of statements or a set of code grouped together to perform a certain task or operation. It is used to achieve the reusability of code. We write a method once and use it many times. We do not require to write code again and again.
 
-Method Declaration:
+#### Method Declaration
 
 <center>
 
-![method](https://static.javatpoint.com/core/images/method-in-java.png)
+![method](https://media.geeksforgeeks.org/wp-content/uploads/methods-in-java.png)
 
 </center>
 
