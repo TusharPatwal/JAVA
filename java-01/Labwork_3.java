@@ -2,7 +2,7 @@ import java.util.*;
 
 // wap to create a class matrix. the class should have 1 field as 3*3 matrix.
 // write a function to accept a matrix and display its transpose
-
+/*
 class Matrix {
     Scanner sc = new Scanner(System.in);
     public int[][] matrix = new int[3][3];
@@ -24,7 +24,11 @@ class Matrix {
         }
     }
 }
+ */
+
 /*
+ * wap to create student class having fields name, roll, marks in 5 subjects.
+ * class should contain void display result which display the average marks
  * class Students {
  * public String name;
  * public long roll;
@@ -52,19 +56,41 @@ class Matrix {
  * }
  */
 
+// Wap to create circle class and calculate its circumference & area.
+class Circle{
+    public double r;
+
+    public double circumference(){
+        return 2*3.14*r;
+    }
+
+    public double area(){
+        return 2*r*r;
+    }
+}
+
 class Labwork_3 {
     public static void main(String args[]) {
-        // wap to create class student having fields like name, roll, marls in 5
-        // which display avg. marks.
-        // Students tushar = new Students();
+        Scanner sc = new Scanner(System.in);
+        Circle obj = new Circle();
 
-        // tushar.except();
-        // tushar.displayResults();
+        obj.r = 5;
+        System.out.println(obj.circumference());
+        System.out.println(obj.area());
 
-        Matrix mat = new Matrix();
+        /*
+         * Students tushar = new Students();
+         * 
+         * tushar.except();
+         * tushar.displayResults();
+         */
+        
+        /* 
+         Matrix mat = new Matrix();
 
         mat.accept();
         mat.transpose();
+        */
+        sc.close();
     }
 }
- 
