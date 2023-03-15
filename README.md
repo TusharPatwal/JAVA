@@ -521,32 +521,44 @@ public static void main(String[] args) {
 ```
 
 
+
 ## OOPs
 - Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects.
 
 ### Characteristics of Object Oriented Programming
 
-#### Object
-- An Object can be defined as an instance of a class. An object contains an address and takes up some space in memory.
-
-#### Class
+##### Class
 - Collection of objects is called class. It is a logical entity.
 A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
 
-#### Inheritance
-- When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+##### Object
+- An Object can be defined as an instance of a class. An object contains an address and takes up some space in memory.
 
-#### Polymorphism 
+
+##### Polymorphism 
 - If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.
 
-#### Abstraction
-- Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
+![Polymorphism](https://pbs.twimg.com/media/FDVytz0UcAQOUXX?format=jpg&name=large)
 
-#### Encapsulation
+##### Inheritance
+- When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+
+![Inheritance](https://pbs.twimg.com/media/FDVysGkUcAI3iSX?format=jpg&name=medium)
+
+##### Encapsulation
 - Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines. 
 
+![Encapsulation](https://i.pinimg.com/564x/83/b9/24/83b9244b7d262439af24ae8094913bbf.jpg)
 
-#### Class in Java
+##### Abstraction
+- Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
+
+![Abstraction](https://i.pinimg.com/564x/0d/8d/18/0d8d18eb81182fdff19c8d62f3f7e092.jpg)
+
+
+
+
+### Class in Java
 A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity. It can't be physical.
 
 
@@ -566,7 +578,7 @@ class ClassName {
 Example:
 ```java
 class Student{  
- int id;  
+  int id;  
  String name;    
  public static void main(String args[]){  
 
@@ -577,31 +589,74 @@ class Student{
 }}  
 ```
 
-#### Method in Java
-- A method is a block of code or collection of statements or a set of code grouped together to perform a certain task or operation. It is used to achieve the reusability of code. We write a method once and use it many times. We do not require to write code again and again.
+### Object in Java
+- Objects correspond to things found in the real world. For example, a animal class may have objects such as “cat”, “dog”, and “cow”.  
 
-#### Method Declaration
-
-![method](https://media.geeksforgeeks.org/wp-content/uploads/methods-in-java.png)
-
+- Declaring Objects (Also called instantiating a class)
 
 Syntax
 ```java
-public class Main {
-  static void myMethod() {
-    // code to be executed
-  }
-}
+Class_name object = new Class_name();  
 ```
+
 Example:
 ```java
-public class Main {
-  static void myMethod() {
-    System.out.println("I just got executed!");
-  }
+class Student{  
+ int id;  
+ String name;  
+}  
+class TestStudent2{  
+ public static void main(String args[]){  
+  Student s1=new Student();  
+  s1.id=101;  
+  s1.name="Sonoo";  
+  System.out.println(s1.id+" "+s1.name);//printing members 
+}}  
+```
 
-  public static void main(String[] args) {
-    myMethod(); // calling method in main function
+### Method in Java
+  - A method is a block of code or collection of statements or a set of code grouped together to perform a certain task or operation. It is used to achieve the reusability of code. We write a method once and use it many times. We do not require to write code again and again.
+  
+#### Method Declaration
+  
+  ![method](https://media.geeksforgeeks.org/wp-content/uploads/methods-in-java.png)
+  
+  
+  Syntax
+  ```java
+  public class Main {
+    static void myMethod() {
+      // code to be executed
+    }
   }
-}
+  ```
+  Example:
+  ```java
+  public class Main {
+    static void myMethod() {
+      System.out.println("I just got executed!");
+    }
+  
+    public static void main(String[] args) {
+      myMethod(); // calling method in main function
+    }
+  }
+```
 
+### Method Overloading in Java
+- In Java, two or more methods may have the same name if they differ in parameters (different number of parameters, different types of parameters, or both). These methods are called overloaded methods and this feature is called method overloading. 
+
+Example:
+```java
+class Adder{  
+  public int add(int a, int b){
+    return a+b;}  
+  public double add(double a, double b){
+    return a+b;}  
+}  
+class TestOverloading2{  
+  public static void main(String[] args){  
+    System.out.println(Adder.add(11,11));  
+    System.out.println(Adder.add(12.3,12.6));  
+}}  
+```
