@@ -8,8 +8,8 @@
 |3.| Java Operators |[Click here](#java-operator-precedence)|
 |4.| Type Casting & Input |[Click here](#type-casting)|
 |5.| Java Control Statements |[Click here](#java-control-statements)|
-|6.| OOPs |[Click here](#oops)| 
-|7.|||
+|6.| Java Arrays |[Click here](#java-arrays)| 
+|7.|OOPs|[Click here](#oops)|
 |8.|||
 |9.|||
 |10.|||
@@ -520,6 +520,53 @@ public static void main(String[] args) {
 }}}  
 ```
 
+#### Java Arrays
+- Java array is an object which contains elements of a similar data type. Additionally, The elements of an array are stored in a contiguous memory location. It is a data structure where we store similar elements. We can store only a fixed set of elements in a Java array.
+
+###### There are two types of array.
+
+- Single Dimensional Array
+
+Syntax
+```java 
+dataType[] arr = new datatype[size];  
+```
+
+Example: 
+```java
+class Testarray{  
+public static void main(String args[]){  
+  int a[] =new int[5]; 
+  a[0]=10;
+  a[1]=20;  
+  a[2]=70;  
+  a[3]=40;  
+  a[4]=50;  
+
+  for(int i=0;i<a.length;i++) 
+  System.out.print(a[i] + " ");
+}}  
+```
+- Multidimensional Array
+
+Syntax
+```java 
+dataType[][] arr = new datatype[size][size];   
+```
+
+Example: 
+```java
+class Testarray{  
+public static void main(String args[]){  
+  int arr[][]={{1,2,3},{2,4,5},{4,4,5}};  
+  for(int i=0;i<3;i++){  
+    for(int j=0;j<3;j++){  
+      System.out.print(arr[i][j]+" ");  
+    }  
+  System.out.println();}  
+}}     
+```
+
 
 
 ## OOPs
@@ -660,3 +707,4 @@ class TestOverloading2{
     System.out.println(Adder.add(12.3,12.6));  
 }}  
 ```
+
