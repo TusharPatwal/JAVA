@@ -548,12 +548,12 @@ A class can also be defined as a blueprint from which you can create an individu
 ##### Encapsulation
 - Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines. 
 
-![Encapsulation](https://i.pinimg.com/564x/83/b9/24/83b9244b7d262439af24ae8094913bbf.jpg)
+![Encapsulation](https://pbs.twimg.com/media/FDVyspOUcAInVT8?format=jpg&name=medium)
 
 ##### Abstraction
 - Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
 
-![Abstraction](https://i.pinimg.com/564x/0d/8d/18/0d8d18eb81182fdff19c8d62f3f7e092.jpg)
+![Abstraction](https://pbs.twimg.com/media/FDVytMJVUAk405v?format=jpg&name=medium)
 
 
 
