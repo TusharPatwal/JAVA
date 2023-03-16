@@ -708,3 +708,57 @@ class TestOverloading2{
 }}  
 ```
 
+### Constructors in Java
+- In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.
+
+- There are rules defined for the constructor.
+  1. Constructor name must be the same as its class name
+  2. A Constructor must have no explicit return type
+  3. A Java constructor cannot be abstract, static, final, and  synchronized
+
+
+##### Types of Java constructors
+1. Default constructor (no-arg constructor)
+- The default constructor is used to provide the default values to the object like 0, null, etc., depending on the type.
+
+Syntax
+```java
+<class_name>(){}
+```
+
+Example:
+```java
+class Bike1{  
+//default constructor  
+  Bike1(){System.out.println("Bike is created");}  
+  public static void main(String args[]){  
+    Bike1 b=new Bike1();  
+}}  
+```
+2. Parameterized constructor
+- The parameterized constructor is used to provide different values to distinct objects. However, you can provide the same values also.
+
+Syntax
+```java
+<class_name>(dataType para1, dataType para2, ...){}
+```
+
+Example:
+```java
+class Student{  
+    int id;  
+    String name;  
+    // parameterized constructor  
+    Student(int i,String n){  
+    id = i;  
+    name = n;}  
+    //method to display the values  
+    void display(){System.out.println(id+" "+name);}  
+   
+    public static void main(String args[]){  
+    //creating objects and passing values  
+    Student s1 = new Student(111,"Karan");  
+    //calling method to display 
+    s1.display();  
+}}  
+```
