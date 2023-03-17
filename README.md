@@ -789,3 +789,30 @@ public class Student {
     System.out.println("Student Id : "+student.id + "\nStudent Name : "+student.name);}}  
 ```
 
+##### Finalize() Method
+- Finalize() is the method of Object class. This method is called just before an object is garbage collected. finalize() method overrides to dispose system resources, perform clean-up activities and minimize memory leaks.
+
+Syntax
+```java
+protected void finalize() throws Throwable
+// Throwable - the Exception is raised by this method
+```
+
+Example:
+```java
+public class Finalize {  
+     public static void main(String[] args)   
+    {   
+        Finalize obj = new Finalize();   
+        System.out.println(obj.hashCode());   
+        obj = null;   
+        // calling garbage collector    
+        System.gc();   
+        System.out.println("end of garbage collection");   
+  
+    }   
+    @Override  
+    protected void finalize(){   
+        System.out.println("finalize method called");}   
+}  
+```
