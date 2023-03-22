@@ -861,3 +861,8 @@ class Operation2{
    System.out.println("after change "+op.data);  
 }} 
 ```
+
+#### This keyword
+- There can be a lot of usage of Java this keyword. In Java, this is a reference variable that refers to the current object.
+
+![method](https://static.javatpoint.com/images/usage-of-java-this-keyword.png)
