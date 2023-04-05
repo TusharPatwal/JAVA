@@ -142,6 +142,25 @@ double d1 = 12.3;
 
 ```
 
+## Variable
+A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.
+
+#### Types of Variables
+There are three types of variables in Java:
+1) Local Variable
+- A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+
+2) Instance Variable
+- A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.
+
+3) Static variable
+- A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.
+
+Example:
+![TypesOfVariable](https://mlvhinnhtvi1.i.optimole.com/w:900/h:518/q:mauto/https://kaizensk.com/wp-content/uploads/2021/12/types-of-variable-in-python.png)
+
+
+
 ##### Final Variable
 - If you make any variable as final, you cannot change the value of final variable(It will be constant).
 
