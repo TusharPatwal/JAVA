@@ -159,7 +159,8 @@ There are three types of variables in Java:
 Example:
 ![TypesOfVariable](https://mlvhinnhtvi1.i.optimole.com/w:900/h:518/q:mauto/https://kaizensk.com/wp-content/uploads/2021/12/types-of-variable-in-python.png)
 
-
+## Keywords
+![JavaReserveKeywods](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/06/List-of-Java-Keywords.jpg)
 
 ##### Final Variable
 - If you make any variable as final, you cannot change the value of final variable(It will be constant).
