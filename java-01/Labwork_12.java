@@ -1,4 +1,4 @@
-// Create a class box having height, width , depth as the instance variables & calculate its volume. Implement
+// 11. Create a class box having height, width , depth as the instance variables & calculate its volume. Implement
 // constructor overloading in it. Create a subclass named box_new that has weight as an instance variable. Use
 // super in the box_new class to initialize members of the base class.
 
