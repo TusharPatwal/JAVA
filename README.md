@@ -887,3 +887,41 @@ class Operation2{
 
 ![method](https://static.javatpoint.com/images/usage-of-java-this-keyword.png)
 
+Example-1: 
+
+```java
+class Student{  
+  int rollno;  
+  String name;  
+  float fee;  
+  Student(int rollno,String name,float fee){  
+    this.rollno=rollno;  
+    this.name=name;  
+    this.fee=fee;
+  }  
+void display(){System.out.println(rollno+" "+name+" "+fee);}  
+}  
+  
+class TestThis2{  
+  public static void main(String args[]){  
+    Student s1=new Student(111,"ankit",5000f);  
+    Student s2=new Student(112,"sumit",6000f);  
+    s1.display();  
+    s2.display();  
+  }
+}  
+```
+Example-2: 
+
+```java
+class A5{  
+  void m(){  
+    System.out.println(this);
+  }  
+  public static void main(String args[]){  
+    A5 obj=new A5();  
+    System.out.println(obj);
+    obj.m();  
+  }  
+}  
+```
