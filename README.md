@@ -925,3 +925,43 @@ class A5{
   }  
 }  
 ```
+
+#### Static keyword
+
+The static keyword in Java is used for memory management mainly. We can apply static keyword with variables, methods, blocks and nested classes. The static keyword belongs to the class than an instance of the class.
+
+- The static can be:
+
+1. Static Variable
+- The static variable can be used to refer to the common property of all objects (which is not unique for each object), for example, the company name of employees, college name of students, etc.
+
+- The static variable gets memory only once in the class area at the time of class loading.
+
+Example:
+```java
+class Student{  
+   int rollno; 
+   String name;  
+   static String college ="ITS"; 
+   //constructor  
+   Student(int r, String n){  
+   rollno = r;  
+   name = n;  
+   }  
+   //method to display the values  
+   void display (){System.out.println(rollno+" "+name+" "+college);}  
+}  
+//Test class to show the values of objects  
+public class TestStaticVariable1{  
+ public static void main(String args[]){  
+ Student s1 = new Student(111,"Karan");  
+ Student s2 = new Student(222,"Aryan");  
+   
+ s1.display();  
+ s2.display();  
+ }  
+}  
+```
+
+2. Static Method 
+3. Static Block
