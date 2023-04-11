@@ -2,59 +2,46 @@
 
 interface Shapes {
     void area();
-
     void perimeter();
 }
 
-class circle implements Shapes {
+class circle implements Shapes{
     double pi;
     int r;
-
-    circle(double pi, int r) {
-        this.pi = pi;
-        this.r = r;
+   
+    circle(double pi, int r){
+        this.pi = pi; this.r = r;
     }
-
     public void area() {
-        System.out.println(pi * r);
+        System.out.println(pi*r);
     }
-
-    public void perimeter() {
-        System.out.println(2 * pi * r);
+    public void perimeter(){
+        System.out.println(2*pi*r);
     }
 }
-
-class Rectangle implements Shapes {
+class Rectangle implements Shapes{
 
     int l, b;
-
-    Rectangle(int l, int b) {
-        this.l = l;
-        this.b = b;
+    Rectangle(int l, int b){
+        this.l = l; this.b = b;
     }
-
     public void area() {
-        System.out.println(b * l);
+        System.out.println(b*l);
     }
-
-    public void perimeter() {
-        System.out.println(2 * b * l);
+    public void perimeter(){
+        System.out.println(2*b*l);
     }
 }
-
-class square implements Shapes {
+class square implements Shapes{
     int a;
-
-    square(int a) {
+    square(int a){
         this.a = a;
     }
-
     public void area() {
-        System.out.println(a * a);
+        System.out.println(a*a);
     }
-
-    public void perimeter() {
-        System.out.println(2 * a);
+    public void perimeter(){
+        System.out.println(2*a);
     }
 }
 
