@@ -964,4 +964,5 @@ public class TestStaticVariable1{
 ```
 
 2. Static Method 
+
 3. Static Block
