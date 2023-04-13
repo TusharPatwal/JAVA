@@ -809,7 +809,7 @@ public class Student {
     System.out.println("Student Id : "+student.id + "\nStudent Name : "+student.name);}}  
 ```
 
-##### Finalize() Method
+#### Finalize() Method
 - Finalize() is the method of Object class. This method is called just before an object is garbage collected. finalize() method overrides to dispose system resources, perform clean-up activities and minimize memory leaks.
 
 Syntax
@@ -988,3 +988,31 @@ class A{
   }  
 }  
 ```
+
+### Inheritance
+
+- The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.
+
+Synatx
+```java
+class Subclass-name extends Superclass-name {  
+   //methods and fields  
+}
+```
+
+![Inheritance](https://static.javatpoint.com/images/core/inheritance.jpg)
+
+Example:
+```java
+class Employee{  
+ float salary=40000;  
+}  
+class Programmer extends Employee{  
+ int bonus=10000;  
+ public static void main(String args[]){  
+   Programmer p=new Programmer();  
+   System.out.println("Programmer salary is:"+p.salary);  
+   System.out.println("Bonus of Programmer is:"+p.bonus);  
+}}
+```
+
