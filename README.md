@@ -1016,3 +1016,106 @@ class Programmer extends Employee{
 }}
 ```
 
+#### Types of inheritance
+
+1. Single Inheritance
+- When a class inherits another class, it is known as a single inheritance.
+
+Example:
+```java
+class Animal{  
+void eat(){System.out.println("eating...");}}
+
+class Dog extends Animal{  
+void bark(){System.out.println("barking...");}}  
+
+class TestInheritance{  
+  public static void main(String args[]){  
+    Dog d=new Dog();  
+    d.bark();  
+    d.eat(); 
+  }
+}  
+```
+
+2. Multilevel Inheritance
+-  Multilevel Inheritance in java occurs when a class extends a class that extends another class. This is called multilevel Inheritance in java.
+
+Example:
+```java
+class Animal{  
+void eat(){System.out.println("eating...");}}  
+
+class Dog extends Animal{  
+void bark(){System.out.println("barking...");}}  
+
+class BabyDog extends Dog{  
+void weep(){System.out.println("weeping...");}}  
+
+class TestInheritance2{  
+  public static void main(String args[]){  
+    BabyDog d=new BabyDog();  
+    d.weep();  
+    d.bark();  
+    d.eat();  
+  }
+}  
+```
+
+3. Hierarchical Inheritance
+- When two or more classes inherits a single class, it is known as hierarchical inheritance.
+
+Example: 
+```java
+class Animal{  
+void eat(){System.out.println("eating...");}}  
+
+class Dog extends Animal{  
+void bark(){System.out.println("barking...");}}  
+
+class Cat extends Animal{  
+void meow(){System.out.println("meowing...");}}  
+
+class TestInheritance3{  
+  public static void main(String args[]){  
+    Cat c=new Cat();  
+    c.meow();  
+    c.eat();  
+  }
+}  
+```
+
+4. Hybrid Inheritance
+- It is the composition of two or more types of inheritance. The main purpose of using hybrid inheritance is to modularize the code into well-defined classes. 
+
+Example:
+```java
+class C {
+  public void disp(){ System.out.println("C");}
+}
+
+class A extends C {
+  public void disp(){ System.out.println("A");}
+}
+
+class B extends C {
+  public void disp(){ System.out.println("B");}
+}
+
+class D extends A {
+  public void disp(){ System.out.println("D");}
+  
+  public static void main(String args[]){
+    D obj = new D();
+	  obj.disp();
+  }
+}
+```
+
+#### NOTE:
+Why multiple inheritance is not supported in java?
+=
+
+- To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+
+- Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class.
