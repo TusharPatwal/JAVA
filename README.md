@@ -942,27 +942,48 @@ Example:
 class Student{  
    int rollno; 
    String name;  
-   static String college ="ITS"; 
-   //constructor  
+   static String college ="ITS";  
    Student(int r, String n){  
    rollno = r;  
    name = n;  
-   }  
-   //method to display the values  
+   }    
    void display (){System.out.println(rollno+" "+name+" "+college);}  
 }  
-//Test class to show the values of objects  
 public class TestStaticVariable1{  
  public static void main(String args[]){  
- Student s1 = new Student(111,"Karan");  
- Student s2 = new Student(222,"Aryan");  
-   
+ Student s1 = new Student(111,"Karan");   
  s1.display();  
- s2.display();  
  }  
 }  
 ```
 
 2. Static Method 
+- A static method belongs to the class rather than the object of a class.
+- A static method can be invoked without the need for creating an instance of a class.
+- A static method can access static data member and can change the value of it.
 
+Example:
+```java
+class Student{  
+     int rollno;  
+     String name;  
+     static String college = "ITS";  
+     static void change(){  
+     college = "BBDIT";  
+     }  
+     Student(int r, String n){  
+     rollno = r;  
+     name = n;  }  
+     void display(){System.out.println(rollno+" "+name+" "+college);}  
+}  
+public class TestStaticMethod{  
+    public static void main(String args[]){  
+    Student.change();  
+    Student s1 = new Student(111,"Karan");  
+    Student s2 = new Student(222,"Aryan"); 
+    s1.display();  
+    s2.display();  
+    }  
+} 
+```
 3. Static Block
