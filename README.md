@@ -1119,3 +1119,84 @@ Why multiple inheritance is not supported in java?
 - To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
 
 - Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class.
+
+
+### Super Keyword
+- The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+
+- Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable.
+
+#### Super Keyword Usage
+
+![usageOfSuperKeyword](https://static.javatpoint.com/images/usage-of-java-super.jpg)
+
+1. Super is used to refer immediate parent class instance variable.
+
+- We can use super keyword to access the data member or field of parent class. It is used if parent class and child class have same fields.
+
+Example: 
+```java
+class Animal{
+  String color="white";}  
+
+class Dog extends Animal{  
+  String color="black";  
+  void printColor(){  
+    System.out.println(color);//prints color of Dog class  
+    System.out.println(super.color);//prints color of Animal class  
+  }  
+}  
+class TestSuper1{  
+  public static void main(String args[]){  
+    Dog d=new Dog();  
+    d.printColor();  
+  }
+}  
+```
+
+2. Super can be used to invoke parent class method
+
+- The super keyword can also be used to invoke parent class method. It should be used if subclass contains the same method as parent class. In other words, it is used if method is overridden.
+
+Exapmle:
+```java
+class Animal{  
+  void eat(){System.out.println("eating...");}
+}  
+
+class Dog extends Animal{  
+  void eat(){System.out.println("eating bread...");}  
+  void bark(){System.out.println("barking...");}  
+  void work(){  
+  super.eat();  
+  bark();  
+  }  
+}  
+class TestSuper2{  
+  public static void main(String args[]){  
+    Dog d=new Dog();  
+    d.work();  
+  }
+}  
+```
+
+3. Super is used to invoke parent class constructor
+
+- The super keyword can also be used to invoke the parent class constructor. Let's see a simple example:
+
+```java
+class Animal{  
+  Animal(){System.out.println("animal is created");}  
+} 
+
+class Dog extends Animal{  
+  Dog(){  
+    super();  
+    System.out.println("dog is created");}  
+} 
+
+class TestSuper3{  
+  public static void main(String args[]){  
+  Dog d=new Dog();  
+  }
+}  
