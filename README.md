@@ -162,14 +162,6 @@ Example:
 ## Keywords
 ![JavaReserveKeywods](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/06/List-of-Java-Keywords.jpg)
 
-##### Final Variable
-- If you make any variable as final, you cannot change the value of final variable(It will be constant).
-
-Example:
-```java
-final int num = 5;
-num = 20; // Will gererate an error: cannot assign a value to final variable num
-```
 
 ## Java Operator Precedence
 |Operator Type |	Category |	Precedence |
@@ -1259,3 +1251,59 @@ class Splendor extends Bike{
   }  
 }  
 ```
+
+### Final Keyword
+- The final keyword in java is used to restrict the user. The java final keyword can be used in many context. 
+
+1. Final variable
+- If you make any variable as final, you cannot change the value of final variable(It will be constant).
+
+Example:
+```java
+class Bike{  
+ final int speedlimit=90;//final variable  
+ void run(){  
+  speedlimit=400;  
+ }  
+ public static void main(String args[]){  
+ Bike obj=new  Bike();  
+ obj.run();  
+ }  
+}
+```
+2. Final method
+- If you make any method as final, you cannot override it.
+
+Example:
+```java
+class Bike{  
+    final void run(){System.out.println("running");}  
+}  
+     
+class Honda extends Bike{  
+   void run(){System.out.println("running safely on 100kmph");}  
+     
+  public static void main(String args[]){  
+    Honda honda= new Honda();  
+    honda.run();  
+  }  
+}  
+```
+
+3. Final class 
+- If you make any class as final, you cannot extent it.
+
+Example:
+```java
+final class Bike{}  
+  
+class Honda1 extends Bike{  
+  void run(){System.out.println("running safely with 100kmph");}  
+    
+  public static void main(String args[]){  
+    Honda1 honda= new Honda1();  
+    honda.run();  
+  }  
+}  
+```
+
