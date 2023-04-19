@@ -1200,3 +1200,62 @@ class TestSuper3{
   Dog d=new Dog();  
   }
 }  
+```
+
+#### Method Overriding
+- If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+
+- In other words, If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as method overriding.
+
+![MethodOverriding](https://static.javatpoint.com/images/java-rules-for-method-overriding.png)
+
+Example:
+```java
+class Vehicle{  
+  //defining a method  
+  void run(){System.out.println("Vehicle is running");}  
+}  
+
+//Creating a child class  
+class Bike2 extends Vehicle{  
+  //defining the same method as in the parent class  
+  void run(){System.out.println("Bike is running safely");}  
+  
+  public static void main(String args[]){  
+    Bike2 obj = new Bike2();//creating object  
+    obj.run();//calling method  
+  }  
+}  
+```
+
+#### Dynamic Method Dispatch (Runtime polymorphism)
+
+- Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time.
+
+- In this process, an overridden method is called through the reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+
+![upcasting](https://static.javatpoint.com/images/java-upcasting.png)
+
+Syntax
+```java
+class A{}  
+class B extends A{}  
+
+A a = new B();//upcasting 
+```
+
+Example:
+```java
+class Bike{  
+  void run(){System.out.println("running");}  
+}  
+
+class Splendor extends Bike{  
+  void run(){System.out.println("running safely with 60km");}  
+  
+  public static void main(String args[]){  
+    Bike b = new Splendor();//upcasting  
+    b.run();  
+  }  
+}  
+```
