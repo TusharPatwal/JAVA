@@ -1307,3 +1307,57 @@ class Honda1 extends Bike{
 }  
 ```
 
+#### Abstract Method
+- A method declared using the abstract keyword within an abstract class and does not have a definition (implementation) is called an abstract method.
+
+- When we need just the method declaration in a super class, it can be achieved by declaring the methods as abstracts.
+
+Syntax
+```java
+abstract return_type method_name( [ argument-list ] );  
+```
+
+Example:
+```java
+// abstract class  
+abstract class Multiply {  
+     
+   // abstract methods   
+   public abstract int MultiplyTwo (int n1, int n2);  
+   public abstract int MultiplyThree (int n1, int n2, int n3);       
+}  
+
+class AbstractMethodEx1 extends Multiply {    
+  public int MultiplyTwo (int num1, int num2) {  
+    return num1 * num2;  
+  }  
+  public int MultiplyThree (int num1, int num2, int num3) {  
+    return num1 * num2 * num3;  
+  }   
+  public static void main (String args[]) {  
+    Multiply obj = new AbstractMethodEx1();  
+    System.out.println ("Multiplication of 2 numbers: " + obj.MultiplyTwo (10, 50));  
+    System.out.println ("Multiplication of 3 numbers: " + obj.MultiplyThree (5, 8, 10));  
+  }  
+}  
+```
+
+#### Abstract class
+- A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body).
+
+![AbstractClass](https://static.javatpoint.com/images/abstract-class-in-java.jpg)
+
+Example:
+```java
+abstract class Bike{  
+  abstract void run();  
+}  
+
+class Honda extends Bike{  
+  void run(){System.out.println("running safely");}  
+  public static void main(String args[]){  
+    Bike obj = new Honda();  
+    obj.run();  
+  }  
+}  
+```
