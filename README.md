@@ -1414,3 +1414,21 @@ String s = "welcome";
 String s = new String("Welcome");  
 ```
 
+##### String class methods
+
+|S.no.| Java Method | Syntax | Returns | Usage | 
+|-----|-------------|--------|---------|-------| 
+|1.|indexOf()|indexOf​(String str, int fromIndex)|int|For finding the index of the first occurrence of a character or a string in the given string. |
+|2.|charAt()|charAt​(int index)|char|To get character at the specified index |
+|3.|concat()|concat​(String str)|String|To append the passed string to the end of the given string.|
+|4.|replace()|replace​(char oldChar, char newChar)|String|To replace all the occurrences of the given character/String from given String|
+|5.|substring()|substring​(int beginIndex, int endIndex)|String|To get a part of a string from the given string.|
+|6.|split()|split​(String regex,int limit)|String|For splitting the given string based on the given regular Expression.|
+|7.|compareTo()|compareTo​(String anotherString)|int|To compare two Strings Lexicographically.|
+|8.|strip()|strip()|String|To remove all trailing and leading whitespaces from the given string.|
+|9.|valueOf()|valueOf​(char[] data)|String|To return String representation of the passed argument.|
+|10.|isEmpty()|str.isEmpty()|boolean|To checks if the input string is empty or not.|
+|11.|toLowerCase()|str.toLowerCase()|String|To returns the string in lowercase letter.|
+|12.|toUpperCase()|str.toUpperCase()|String|To returns the string in uppercase letter.|
+|13.|startsWith()|str.startsWith("F")|boolean|To checks if this string starts with the given prefix.|
+|14.|endsWith()|str.endsWith("K")|boolean|To checks if this string ends with a given suffix. |
