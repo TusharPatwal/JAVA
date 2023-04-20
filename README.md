@@ -1347,6 +1347,7 @@ class AbstractMethodEx1 extends Multiply {
 
 ![AbstractClass](https://static.javatpoint.com/images/abstract-class-in-java.jpg)
 
+
 Example:
 ```java
 abstract class Bike{  
@@ -1360,4 +1361,41 @@ class Honda extends Bike{
     obj.run();  
   }  
 }  
+```
+
+#### Interface 
+- An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+- The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
+
+Why use Java interface?
+=
+![interface](https://static.javatpoint.com/interview/images/why-use-java-interface.jpg)
+
+Syntax
+```java
+interface <interface_name>{  
+      
+    // declare constant fields  
+    // declare methods that abstract   
+    // by default.  
+}  
+```
+
+Example:
+```java
+interface Bank{  
+  float rateOfInterest();  
+}  
+class SBI implements Bank{  
+  public float rateOfInterest(){return 9.15f;}  
+}  
+class PNB implements Bank{  
+  public float rateOfInterest(){return 9.7f;}  
+}  
+class TestInterface2{  
+  public static void main(String[] args){  
+    Bank b=new SBI();  
+    System.out.println("ROI: "+b.rateOfInterest());  
+  }
+} 
 ```
