@@ -1,7 +1,7 @@
 // package creation in java
 package myPackage;
 
-class Package {
+public class Package {
     public void show(){
         System.out.println("This is a package");
     }
