@@ -1432,3 +1432,29 @@ String s = new String("Welcome");
 |12.|toUpperCase()|str.toUpperCase()|String|To returns the string in uppercase letter.|
 |13.|startsWith()|str.startsWith("F")|boolean|To checks if this string starts with the given prefix.|
 |14.|endsWith()|str.endsWith("K")|boolean|To checks if this string ends with a given suffix. |
+
+
+#### Package
+
+- A java package is a group of similar types of classes, interfaces and sub-packages.
+Package in java can be categorized in two form, built-in package and user-defined package.
+
+- There are many built-in packages such as java, lang, awt, javax, swing, net, io, util, sql etc.
+
+Example:
+```java
+//save as Simple.java  
+package mypack;  
+public class Simple{  
+  public static void main(String args[]){  
+    System.out.println("Welcome to package");  
+  }  
+}  
+```
+- To compile java package
+
+Syntax : `javac -d directory javafilename`
+
+```java
+javac -d . Simple.java  
+```
