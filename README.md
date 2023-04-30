@@ -812,20 +812,22 @@ protected void finalize() throws Throwable
 
 Example:
 ```java
-public class Finalize {  
-     public static void main(String[] args)   
-    {   
-        Finalize obj = new Finalize();   
-        System.out.println(obj.hashCode());   
-        obj = null;   
-        // calling garbage collector    
-        System.gc();   
-        System.out.println("end of garbage collection");   
-  
-    }   
-    @Override  
-    protected void finalize(){   
-        System.out.println("finalize method called");}   
+public class FinalizeExample {    
+     public static void main(String[] args)     
+    {     
+        FinalizeExample obj = new FinalizeExample();        
+        // printing the hashcode   
+        System.out.println("Hashcode is: " + obj.hashCode());           
+        obj = null;    
+        // calling the garbage collector using gc()   
+        System.gc();     
+        System.out.println("End of the garbage collection");     
+    }     
+   // defining the finalize method   
+    protected void finalize()     
+    {     
+        System.out.println("Called the finalize() method");     
+    }     
 }  
 ```
 
@@ -1364,7 +1366,6 @@ class Honda extends Bike{
 ```
 
 ### Interface 
-- An interface in Java is a blueprint of a class. It has static constants and abstract methods.
 - The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
 
 Why use Java interface?
@@ -1487,3 +1488,6 @@ javac -d . Simple.java
 |finally|The "finally" block is used to execute the necessary code of the program. It is executed whether an exception is handled or not.|
 |theow|The "throw" keyword is used to throw an exception.|
 |throws|The "throws" keyword is used to declare exceptions. It specifies that there may occur an exception in the method. It doesn't throw an exception. It is always used with method signature.|
+
+#### Difference between final, finally and finalize
+![difference](https://miro.medium.com/v2/resize:fit:736/1*cI8tIyU0xmTnRJ72Ao2XqA.png)
