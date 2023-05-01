@@ -1479,6 +1479,9 @@ javac -d . Simple.java
 3. Error
 - Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
 
+#### Types of Exception
+![exceptions](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1672052723981-Checked%20and%20unchecked%20exceptions%20in%20java1.png)
+
 ##### Exception Keywords
 
 |Keyword|Description|
