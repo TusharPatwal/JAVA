@@ -1491,3 +1491,54 @@ javac -d . Simple.java
 
 #### Difference between final, finally and finalize
 ![difference](https://miro.medium.com/v2/resize:fit:736/1*cI8tIyU0xmTnRJ72Ao2XqA.png)
+
+
+### Wrapper classes in Java
+- The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+- Since J2SE 5.0, autoboxing and unboxing feature convert primitives into objects and objects into primitives automatically.
+
+The eight classes of the java.lang package are known as wrapper classes in Java. 
+|Primitive Type	|Wrapper class|
+|--|--|
+|boolean|	Boolean|
+|char|Character|
+|byte|Byte|
+|short|Short|
+|int|Integer|
+|long|Long|
+|float|Float|
+|double|Double|
+
+#### Autoboxing
+- The automatic conversion of primitive data type into its corresponding wrapper class is known as autoboxing, for example, byte to Byte, char to Character, int to Integer, long to Long, float to Float, boolean to Boolean, double to Double, and short to Short.
+
+Example:
+```java
+public class WrapperExample1{  
+  public static void main(String args[]){  
+    //Converting int into Integer  
+    int a=20;  
+    Integer i=Integer.valueOf(a);//converting int into Integer  explicitly  
+    Integer j=a;//autoboxing
+  
+    System.out.println(a+" "+i+" "+j);  
+  }
+}  
+```
+
+#### Unboxing
+- The automatic conversion of wrapper type into its corresponding primitive type is known as unboxing. It is the reverse process of autoboxing.
+
+Example:
+```java
+public class WrapperExample2{    
+  public static void main(String args[]){    
+    //Converting Integer to int    
+    Integer a=new Integer(3);    
+    int i=a.intValue();//converting Integer to int explicitly  
+    int j=a;//unboxing, now compiler will write a.intValue() internally    
+    
+    System.out.println(a+" "+i+" "+j);    
+  }
+}  
+```
