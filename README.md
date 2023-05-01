@@ -1545,3 +1545,77 @@ public class WrapperExample2{
   }
 }  
 ```
+
+#### StringBuffer Class
+- Java StringBuffer class is used to create mutable (modifiable) String objects. The StringBuffer class in Java is the same as String class except it is mutable i.e. it can be changed.
+
+- Methods of StringBuffer
+1. StringBuffer Class append() Method
+The append() method concatenates the given argument with this String.
+
+Example:
+```java
+class StringBufferExample{  
+  public static void main(String args[]){  
+    StringBuffer sb=new StringBuffer("Hello ");  
+    sb.append("Java");//now original string is changed  
+    System.out.println(sb);//prints Hello Java  
+  }  
+}  
+```
+
+2. StringBuffer insert() Method
+The insert() method inserts the given String with this string at the given position.
+
+Example:
+```java
+class StringBufferExample2{  
+  public static void main(String args[]){  
+    StringBuffer sb=new StringBuffer("Hello ");  
+    sb.insert(1,"Java");//now original string is changed  
+    System.out.println(sb);//prints HJavaello  
+  }  
+} 
+```
+
+3. StringBuffer replace() Method
+The replace() method replaces the given String from the specified beginIndex and endIndex.
+
+Example:
+```java
+class StringBufferExample3{  
+  public static void main(String args[]){  
+    StringBuffer sb=new StringBuffer("Hello");  
+    sb.replace(1,3,"Java");  
+    System.out.println(sb);//prints HJavalo  
+  }  
+}  
+```
+
+4. StringBuffer delete() Method
+The delete() method of the StringBuffer class deletes the String from the specified beginIndex to endIndex.
+
+Example:
+```java
+class StringBufferExample4{  
+  public static void main(String args[]){  
+    StringBuffer sb=new StringBuffer("Hello");  
+    sb.delete(1,3);  
+    System.out.println(sb);//prints Hlo  
+  }  
+}  
+```
+
+5.  StringBuffer reverse() Method
+The reverse() method of the StringBuilder class reverses the current String.
+
+Example:
+```java
+class StringBufferExample5{  
+  public static void main(String args[]){  
+    StringBuffer sb=new StringBuffer("Hello");  
+    sb.reverse();  
+    System.out.println(sb);//prints olleH  
+  }  
+}  
+```
