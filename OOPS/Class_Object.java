@@ -7,15 +7,16 @@
 // Types of class:
 //                1. User-defined -> A, Person, Animal, ... etc
 //                2. pre-defined -> System, Strings, Scanner, ... etc
-class Person{
+class Person {
     int age = 20;
     int weight = 65;
     String color = "Light";
 
-    void eat(){
+    void eat() {
         System.out.println("I am eating");
     }
-    void sleep(){
+
+    void sleep() {
         System.out.println("I am sleeping");
     }
 }
@@ -27,6 +28,7 @@ public class Class_Object {
         System.out.println(obj.weight);
         System.out.println(obj.color);
 
-        obj.eat(); obj.sleep();
+        obj.eat();
+        obj.sleep();
     }
 }
