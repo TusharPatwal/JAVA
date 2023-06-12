@@ -1,4 +1,4 @@
 # add any file name you don't want to push in git repo
 
-# .gitignore
+.gitignore
 tempCodeRunnerFile.java
