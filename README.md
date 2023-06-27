@@ -10,12 +10,14 @@
 |5.| Java Control Statements |[Click here](#java-control-statements)|
 |6.| Java Arrays |[Click here](#java-arrays)| 
 |7.|OOPs|[Click here](#oops)|
-|8.|||
-|9.|||
-|10.|||
-|11.|||
-|12.|||
-|13.|||
+|8.|Inheritance|[Click here](#inheritance-1)|
+|9.|Super Keyword|[Click here](#super-keyword)|
+|10.|Dynamic Method Dispatch|[Click here](#dynamic-method-dispatch-runtime-polymorphism)|
+|11.|Interface|[Click here](#interface)|
+|12.|String|[Click here](#string)|
+|13.|Package|[Click here](#package)|
+|14.|Wrapper Class|[Click here](#wrapper-classes-in-java)|
+|15.|StringBuffer|[Click here](#stringbuffer-class)|
 ### What is Java?
 Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. It is owned by Oracle, and more than 3 billion devices run Java.<br>
 Designed by	James Gosling <br>
