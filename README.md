@@ -1437,7 +1437,7 @@ String s = new String("Welcome");
 |14.|endsWith()|str.endsWith("K")|boolean|To checks if this string ends with a given suffix. |
 
 
-#### Package
+### Package
 
 - A java package is a group of similar types of classes, interfaces and sub-packages.
 Package in java can be categorized in two form, built-in package and user-defined package.
@@ -1454,14 +1454,38 @@ public class Simple{
   }  
 }  
 ```
-- To compile java package
 
-Syntax : `javac -d directory javafilename`
+#### Package Creation
+- The package keyword is used to create a package in java.
 
 ```java
-javac -d . Simple.java  
+// package creation in java
+package myPackage;
+
+public class Package {
+    public void show(){
+        System.out.println("This is a package");
+    }
+    public static void main(String[] args) {
+        Package obj1 = new Package();
+        obj1.show(); 
+    }
+}
 ```
 
+#### Calling a package
+- The import keyword is used to make the classes and interface of another package accessible to the current package.
+
+```java
+import myPackage.Package;
+
+class one {
+    public static void main(String[] args) {
+        Package o = new Package();
+        o.show();
+    }
+}
+```
 
 #### Exception Handling
 - Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
