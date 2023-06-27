@@ -16,8 +16,9 @@
 |11.|Interface|[Click here](#interface)|
 |12.|String|[Click here](#string)|
 |13.|Package|[Click here](#package)|
-|14.|Wrapper Class|[Click here](#wrapper-classes-in-java)|
-|15.|StringBuffer|[Click here](#stringbuffer-class)|
+|14.|Exception Handling|[Click here](#exception-handling)|
+|15.|Wrapper Class|[Click here](#wrapper-classes-in-java)|
+|16.|StringBuffer|[Click here](#stringbuffer-class)|
 ### What is Java?
 Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. It is owned by Oracle, and more than 3 billion devices run Java.<br>
 Designed by	James Gosling <br>
@@ -1487,14 +1488,70 @@ class one {
 }
 ```
 
-#### Exception Handling
+### Exception Handling
 - Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
+
 - The core advantage of exception handling is to maintain the normal flow of the application. An exception normally disrupts the normal flow of the application; that is why we need to handle exceptions.
 
-![Exceptions](https://static.javatpoint.com/core/images/hierarchy-of-exception-handling.png)
 
-- Types of Java Exceptions
-![typesOfException](https://static.javatpoint.com/core/images/types-of-exception-handling.png)
+#### Exception Class in Java
+- An error is a problem, bug, or human-created mistake that arises at the time of execution of a program. An exception interrupts the flow of the program and terminates it abnormally. The termination of the program abnormally is not recommended, and for that, we need to handle these exceptions.
+
+- Java provides Java.lang.Exception class for handling the exceptions which inherit the properties and methods of Object and Throwable class.
+
+```java
+class EXceptionClass extends Exception{
+    public EXceptionClass(String string){
+        super(string);
+    }
+}
+public class test07{
+    public static void main(String[] args) {
+        int i = 20;
+        int j = 0;
+
+        try{
+            j = 18/i;
+            if(j==0){
+                throw new EXceptionClass("Error exception class");
+            }
+        }catch (EXceptionClass e) {
+            System.out.println(e);
+        }
+    }
+}
+```
+
+#### User Defined Exception 
+- In Java, we can create our own exceptions that are derived classes of the Exception class. Creating our own Exception is known as custom exception or user-defined exception. Basically, Java custom exceptions are used to customize the exception according to user need.
+
+```java
+class InvalidAgeException extends Exception{
+    InvalidAgeException(String msg){
+        System.out.println(msg);
+    }
+}
+public class test001 {
+    public static void main(String[] args) {
+        try {
+            vote(5);
+        } catch (Exception e) {
+            System.out.println(e);
+
+        }
+    }
+
+    public static void vote(int age) throws InvalidAgeException {
+        if(age < 18){
+            throw new InvalidAgeException("Not eligible for voiting");
+        } else{
+            System.out.println("Eligible for voting");  
+        }
+    }
+}
+```
+
+#### Types of Java Exceptions
 
 1. Checked Exception
 - The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
@@ -1502,8 +1559,6 @@ class one {
 2. Unchecked Exception
 - The classes that inherit the RuntimeException are known as unchecked exceptions. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
 
-3. Error
-- Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
 
 #### Types of Exception
 ![exceptions](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1672052723981-Checked%20and%20unchecked%20exceptions%20in%20java1.png)
