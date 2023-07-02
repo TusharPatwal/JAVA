@@ -7,8 +7,8 @@ public class Test02 implements Runnable {
     }
 
     public static void main(String[] args) {
-        Test02 t = new Test02();
-        Thread t1 = new Thread(t);
-        t1.start();
+        // Test02 t = new Test02();
+        Thread t = new Thread(new Test02());
+        t.start();
     }
 }
