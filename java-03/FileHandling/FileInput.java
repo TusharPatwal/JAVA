@@ -1,18 +1,15 @@
-// CONCEPT OF INPUT/OUTPUT
+// READING FROM BYTE STREAMS
 
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.BufferedReader;
-import java.io.FileReader;
 
 public class FileInput {
     public static void main(String[] args) throws IOException {
-        BufferedReader r = new BufferedReader(new FileReader("C:\\Users\\Tushar\\Desktop\\hello.txt"));
-        
-        String line;
-        // System.out.println();
-        while((line = r.readLine()) != null){
-            System.out.println(line);
+        FileInputStream f = new FileInputStream("C:\\Users\\Tushar\\Desktop\\first.txt"); 
+        int byteread;
+
+        while ((byteread = f.read()) != -1) {
+            System.out.println((char) byteread);            
         }
-        // System.out.println();
     }
 }
