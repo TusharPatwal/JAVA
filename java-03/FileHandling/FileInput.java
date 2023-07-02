@@ -1,4 +1,4 @@
-// READING FROM BYTE STREAMS
+// Java FileInputStream
 
 import java.io.FileInputStream;
 import java.io.IOException;
