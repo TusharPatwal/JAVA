@@ -1394,21 +1394,27 @@ interface <interface_name>{
 
 Example:
 ```java
-interface Bank{  
-  float rateOfInterest();  
-}  
-class SBI implements Bank{  
-  public float rateOfInterest(){return 9.15f;}  
-}  
-class PNB implements Bank{  
-  public float rateOfInterest(){return 9.7f;}  
-}  
-class TestInterface2{  
-  public static void main(String[] args){  
-    Bank b=new SBI();  
-    System.out.println("ROI: "+b.rateOfInterest());  
-  }
-} 
+interface A1 {
+    void show();
+}
+interface B1 {
+    void display();
+}
+public class MultipleInterface implements A1, B1 {
+    public void show() {
+        System.out.println("Interface A1");
+    }
+
+    public void display() {
+        System.out.println("Interface B1");
+    }
+
+    public static void main(String[] args) {
+        MultipleInterface a = new MultipleInterface();
+        a.show();
+        a.display();
+    }
+}
 ```
 #### String
 - String is a sequence of characters. But in Java, string is an object that represents a sequence of characters. The java.lang.String class is used to create a string object.
