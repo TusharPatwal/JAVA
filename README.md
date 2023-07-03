@@ -1315,6 +1315,8 @@ class Honda1 extends Bike{
     honda.run();  
   }  
 }  
+
+// It will throw an error
 ```
 
 #### Abstract Method
