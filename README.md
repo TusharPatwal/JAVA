@@ -1182,19 +1182,22 @@ class TestSuper2{
 - The super keyword can also be used to invoke the parent class constructor. Let's see a simple example:
 
 ```java
-class Animal{  
-  Animal(){System.out.println("animal is created");}  
+class Value{  
+  Value(int a){
+    System.out.println("Value : " + a);
+  }  
 } 
 
-class Dog extends Animal{  
-  Dog(){  
-    super();  
-    System.out.println("dog is created");}  
+class Value2 extends Value{  
+  Value2(){  
+    super(2000);  
+    System.out.println("Value 2");
+  }  
 } 
 
 class TestSuper3{  
   public static void main(String args[]){  
-  Dog d=new Dog();  
+    Value2 d=new Value2();  
   }
 }  
 ```
