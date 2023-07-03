@@ -1296,6 +1296,8 @@ class Honda extends Bike{
     honda.run();  
   }  
 }  
+
+// It will throw an error(overridden method is final)
 ```
 
 3. Final class 
